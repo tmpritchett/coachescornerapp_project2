@@ -7,6 +7,7 @@ var logger = require('morgan');
 var cookieParser = require('cookie-parser');
 var bodyParser = require('body-parser');
 
+const methodOverrie = require('method-override')
 var index = require('./routes/index');
 var users = require('./routes/users');
 
@@ -35,6 +36,8 @@ app.use(function(req, res, next) {
   err.status = 404;
   next(err);
 });
+
+app.use(methodOverride)('_method'))
 
 // error handler
 app.use(function(err, req, res, next) {
