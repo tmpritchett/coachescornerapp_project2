@@ -19,12 +19,18 @@ db.on('error', (err) => {
 })
 
 // Setting up all of our test data
-const stanleyJPritchettJr = new Coach({
+const stanP = new Coach({
   name: 'Stanley J Pritchett Jr',
   positionTitle: 'Head Coach',
   yearsExperience: 7,
-  stats: 100
+  stats: 'pppp'
 })
+const falcons = new Team({
+    name: 'Falcons',
+    location: 'Atlanta, GA',
+    coaches: [stanP]
+})
+
 // const pepsiCola = new Soda({
 //   name: 'Pepsi',
 //   price: 2.50,
@@ -55,14 +61,14 @@ const stanleyJPritchettJr = new Coach({
 // })
 
 // remove all Sodas
-Soda.remove().then(() => {
+Coach.remove().then(() => {
 
   // THEN remove all Companies
-  return Company.remove()
+  return Team.remove()
 }).then(() => {
 
   // THEN save multiple companies to the database
-  return Company.insertMany([ coke, pepsi ])
+  return falcons.save()
 }).then(() => {
 
   // THEN close the database
@@ -73,3 +79,6 @@ Soda.remove().then(() => {
   // If there are any errors, log it and then close the DB
   console.log(err)
   db.close()
+})
+
+

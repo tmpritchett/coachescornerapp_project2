@@ -10,7 +10,7 @@ router.get('/', (req, res) => {
   Team.find().then((teams) => {
 
     // Send all the companies to the hbs file called index in the views/team directory
-    res.render('team/index', {
+    res.render('teams/index', {
       teams: teams
     })
   })
@@ -21,7 +21,7 @@ router.get('/', (req, res) => {
 router.get('/new', (req, res) => {
 
   // Just render a view, we don't need to inject any data from our server here
-  res.render('team/new')
+  res.render('teams/new')
 })
 
 // CREATE
@@ -54,7 +54,7 @@ router.get('/:id', (req, res) => {
   Team.findById(req.params.id).then((team) => {
 
     // THEN render that into a handlebars view and pass the team from our db into hbs
-    res.render('team/show', {
+    res.render('teams/show', {
       team: team
     })
   })
@@ -68,7 +68,7 @@ router.get('/:id/edit', (req, res) => {
   Team.findById(req.params.id).then((team) => {
 
     // THEN render that and id into a handlebars view and pass the team from our db into hbs
-    res.render('team/edit', {
+    res.render('teams/edit', {
       id: req.params.id,
       team: team
     })
