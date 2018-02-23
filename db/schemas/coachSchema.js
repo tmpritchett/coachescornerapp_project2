@@ -8,4 +8,4 @@ const coachSchema = new Schema({
   stats: String
 })
 
-module.exports = sodaSchema
+module.exports = coachSchema
