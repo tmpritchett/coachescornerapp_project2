@@ -7,7 +7,7 @@ var logger = require('morgan');
 var cookieParser = require('cookie-parser');
 var bodyParser = require('body-parser');
 
-const methodOverrie = require('method-override')
+const methodOverride = require('method-override');
 var index = require('./routes/index');
 var users = require('./routes/users');
 
@@ -37,7 +37,8 @@ app.use(function(req, res, next) {
   next(err);
 });
 
-app.use(methodOverride)('_method'))
+app.use(methodOverride('_method'))
+
 
 // error handler
 app.use(function(err, req, res, next) {
