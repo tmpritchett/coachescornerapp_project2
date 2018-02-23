@@ -42,7 +42,7 @@ router.post('/', (req, res) => {
     // THEN once we have the Team, take req.body and make a new Coach
     const newCoach = new Coach({
       name: req.body.name,
-      positionCoached: req.body.positionCoached,
+      positionTitle: req.body.positionCoached,
       yearsExperience: req.body.yearsExperience,
       stats: req.body.stats
     })
@@ -101,7 +101,7 @@ router.patch('/:id', (req, res) => {
     // so instead we need to manually change the coaches values
     const coach = team.coaches.id(req.params.id)
     coach.name = req.body.name
-    coach.positionCoached = req.body.positionCoached
+    coach.positionTitle = req.body.positionTitle
     coach.yearsExperience = req.body.yearsExperience
     coach.stats = req.body.stats
 
