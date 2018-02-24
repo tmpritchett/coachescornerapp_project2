@@ -1,0 +1,15 @@
+<h1>Edit {{team.name}}</h1>
+<form method="POST" action="/teams/{{id}}?_method=PATCH">
+  <div>
+    <label for="name">Name of Team</label>
+    <input type="text" name="name" value="{{team.name}}">
+  </div>
+  <div>
+    <label for="location">Location</label>
+    <input type="text" name="location" value="{{team.location}}">
+  </div>
+  
+  <button type="submit">Add Team</button>
+</form>
+
+<a href="/teams/{{id}}">Back to {{team.name}}</a>
