@@ -13,7 +13,7 @@ router.get('/', (req, res) => {
   // Find the company by route params defined in app.js
   Team.findById(req.params.companyId).then((team) => {
 
-    // Pass all sodas and the company to a view specifically for showing all sodas
+    // Pass all coaches and the team to a view specifically for showing all sodas
     const coaches = team.coaches
     res.render('coach/index', {
       team: team,
@@ -42,7 +42,7 @@ router.post('/', (req, res) => {
     // THEN once we have the Team, take req.body and make a new Coach
     const newCoach = new Coach({
       name: req.body.name,
-      positionTitle: req.body.positionCoached,
+      positionTitle: req.body.positionTitle,
       yearsExperience: req.body.yearsExperience,
       stats: req.body.stats
     })
