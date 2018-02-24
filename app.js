@@ -11,7 +11,7 @@ const methodOverride = require('method-override');
 var index = require('./routes/index');
 var users = require('./routes/users');
 const teamController = require('./controllers/teamController');
-const coachController = require('.controllers/coachController');
+const coachController = require('./controllers/coachController');
 
 
 var app = express();
