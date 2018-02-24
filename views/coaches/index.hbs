@@ -1,0 +1,10 @@
+<h1>{{team.name}}'s Coaches</h1>
+
+{{#each coaches}}
+  <div>
+    <a href="/teams/{{../team._id}}/coaches/{{_id}}">{{name}}</a>
+  </div>
+{{/each}}
+
+<a href="/teams/{{team._id}}/coaches/new">New Coach</a>
+<a href="/teams/{{team._id}}">Back To Team Page</a>
