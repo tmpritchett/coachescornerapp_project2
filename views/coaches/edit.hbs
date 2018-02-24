@@ -1,0 +1,24 @@
+<h1>Edit Coach</h1>
+<form method="POST" action="/teams/{{teamId}}/coaches/{{coach._id}}?_method=PATCH">
+ <div>
+    <label for="name">Name of Coach</label>
+    <input type="text" name="name" value="{{coach.name}}">
+  </div>
+  <div>
+    <label for="position">Position</label>
+    <input type="text" name="position" value="{{coach.position}}">
+  </div>
+  <div>
+    <label for="yearsExperience">Years of Experience</label>
+    <input type="text" name="yearsExperience" value="{{coach.yearsExperience}}">
+   </div>
+  <div>
+    <label for="stats">Stats</label>
+    <input type="text" name="stats"value="{{coach.stats}}">
+  </div>
+  
+  <button type="submit">Edit Coach</button>
+  
+
+</form>
+<a href="/teams/{{teamId}}/coaches/{{coach._id}}">Go Back</a>
