@@ -1,0 +1,11 @@
+<h1>{{coach.name}}</h1>
+
+<p>{{coach.position}}</p>
+<p>{{coach.yearsExperience}}</p>
+<p>{{coach.stats}}</p>
+
+<a href="/teams/{{teamId}}/coaches/{{team._id}}/edit">Edit {{soda.name}}</a>
+
+<form method="POST" action="/teams/{{teamId}}/coaches/{{coach._id}}?_method=DELETE">
+  <button type="submit">Delete This Coach</button>
+</form>
