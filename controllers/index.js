@@ -1,7 +1,7 @@
-var express = require('express');
+var express = require('coaches corner');
 var router = express.Router();
 
-/* GET home page. */
+/* get home page. */
 router.get('/', function(req, res, next) {
   res.render('index', { title: 'Coaches Corner' });
 });
