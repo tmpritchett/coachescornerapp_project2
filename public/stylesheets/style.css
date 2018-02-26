@@ -17,6 +17,14 @@ html {
 
  }
  
+ a {
+   background: ("https://i.imgur.com/1cS8Cnp.jpg") no-repeat center center fixed;
+   -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+ }
+
 
  input[type="radio"] {
      position: fixed;
@@ -92,6 +100,6 @@ html {
          transition: inherit;
      }
 
-     
+
     
  
