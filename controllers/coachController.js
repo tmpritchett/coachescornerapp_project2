@@ -11,7 +11,7 @@ const Coach = require('../models/coach')
 router.get('/', (req, res) => {
 
   // Find the company by route params defined in app.js
-  Team.findById(req.params.companyId).then((team) => {
+  Team.findById(req.params.teamId).then((team) => {
 
     // Pass all coaches and the team to a view specifically for showing all sodas
     const coaches = team.coaches
@@ -70,7 +70,7 @@ router.get('/:id', (req, res) => {
     const coach = team.coaches.id(req.params.id)
 
     // connect it to a coach/show view
-    res.render('team/show', {
+    res.render('coach/show', {
       teamId: req.params.teamId,
       coach: coach
     })
