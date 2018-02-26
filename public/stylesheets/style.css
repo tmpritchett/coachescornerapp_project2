@@ -7,16 +7,16 @@ h1 {
 .editTeamName {
   font-size: 20px
 }
-
+/* 
 html {
 background-color: #89DE27;
- background-image: url("https://i.imgur.com/QKyq5bY.jpg") no-repeat center center fixed; 
+ background: url("https://i.imgur.com/QKyq5bY.jpg") no-repeat center center fixed; 
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
     background-size: cover;
 
- }
+ } */
  
  
   @import 'https://fonts.googleapis.com/css?family=Dosis|Roboto:300,400';
@@ -26,13 +26,26 @@ background-color: #89DE27;
 }
 
 body {
-  background-image: url("https://i.imgur.com/RQybXXq.jpg") no-repeat center center fixed; 
+  background: url("https://i.imgur.com/QKyq5bY.jpg") no-repeat center center fixed; 
+
+  /* background: url("https://i.imgur.com/RQybXXq.jpg") no-repeat center center fixed;  */
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
 }
-
+.homeNav {
+  display: flex;
+  flex-direction: column;
+}
+.homeSignUp{
+  display: flex;
+  width: 100vw;
+  justify-content: flex-end;
+}
+.homeSignUp > a {
+  margin: 10px;
+}
 .container{
     position:absolute;
     width: auto;
