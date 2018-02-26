@@ -1,7 +1,11 @@
 h1 {
-  font-size: 45px;
-  text-align: left;
+  font-size: 100px;
+  text-align: center;
   color: white;
+}
+
+.editTeamName {
+  font-size: 20px
 }
 
 html {
@@ -22,7 +26,7 @@ html {
  /* //    style input fields (note hidden by default)  */
  input:not([type="radio"]) {
 
-     background-color: #007F10;
+     background: url("https://i.imgur.com/byqvQuT.jpg") no-repeat center center fixed;
      display: block;
      transition: 300ms ease;
      border-radius: 7px;
@@ -49,17 +53,18 @@ html {
  }
  
  
- /* //    submit button  */
- /* button {
+
+ button {
      width: 250px;
-     height: 40px;
+  
+    height: 40px;
      border-radius: 7px;    
-     background-color: #6AFFBD ;
+     background-color: #A60000 ;
      font-size: 0;
-    &: before { font-size: 16px; 
+    
+ } button:before {font-size: 16px; 
     }
-  } */
- 
+
  
  /* //    show botton text based on radio selection */
  [id="sign-in"]:checked ~ button:before { content: 'Sign In'; }
@@ -72,12 +77,13 @@ html {
      text-align: center;
      font-weight: 700;
      cursor: pointer;
-     color: #4CFF63;
+     color: white;
      transition: 300ms ease;
      width: calc(100% / 3 - 4px);
+ }
      
   
-     &:after {
+     label:after {
          content: '';
          border: 10px, solid, transparent;
          position: absolute;
@@ -85,6 +91,7 @@ html {
          left: calc(50% - 10px);
          transition: inherit;
      }
-     }
-    }
+
+     
+    
  
