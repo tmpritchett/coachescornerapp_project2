@@ -1,2 +1,12 @@
 <h1>{{team.name}}</h1>
 <h1>{{team.location}}</h1>
+
+<a href="/teams/{{team._id}}/coaches">Go To Coaches Page</a>
+<br>
+<a href="/teams/{{team._id}}/edit">Edit {{team.name}}</a>
+
+{{!-- <form action="/teams/{{team.id}}?_method=DELETE" method="post">
+  <button type="submit">Delete {{team.name}}</button>
+</form> --}}
+
+<a href="/teams">Back To All Teams</a>

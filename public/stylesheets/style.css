@@ -1,5 +1,5 @@
 h1 {
-  font-size: 60px;
+  font-size: 45px;
   text-align: left;
   color: white;
 }
@@ -50,15 +50,16 @@ html {
  
  
  /* //    submit button  */
- button {
+ /* button {
      width: 250px;
      height: 40px;
      border-radius: 7px;    
      background-color: #6AFFBD ;
      font-size: 0;
-     &:before { font-size: 16px; 
+    &: before { font-size: 16px; 
     }
- }
+  } */
+ 
  
  /* //    show botton text based on radio selection */
  [id="sign-in"]:checked ~ button:before { content: 'Sign In'; }

@@ -1,9 +1,17 @@
 <h1>Teams</h1>
 
-{{#each teams}}
+{{!-- {{#each teams}}
 <a href="/teams/{{_id}}">{{name}}</a>
 {{!-- <h4>{{location}}</h4>
 {{#each coaches}}
     <h4>{{name}}</h4>
 {{/each}} --}}
-{{/each}}
+{{!-- {{/each}} --}}
+
+<ul>
+  {{#each teams}}
+    <li><a href="/teams/{{_id}}" >{{name}}</a></li>
+  {{/each}}
+</ul>
+
+<a href="/teams/new">New Team</a>
