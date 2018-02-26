@@ -9,7 +9,7 @@ h1 {
 }
 
 html {
- background: url("https://i.imgur.com/1cS8Cnp.jpg") no-repeat center center fixed; 
+ background-image: url("https://i.imgur.com/RQybXXq.jpg") no-repeat center center fixed; 
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
@@ -17,13 +17,7 @@ html {
 
  }
  
- a {
-   background: ("https://i.imgur.com/1cS8Cnp.jpg") no-repeat center center fixed;
-   -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
-    background-size: cover;
- }
+ 
 
 
  input[type="radio"] {
@@ -49,59 +43,6 @@ html {
      text-align: center;
      outline: 0;
  }
- 
-/* 
- [id="sign-in"]:checked ~ input.sign-in,
- [id="sign-up"]:checked ~ input.sign-up,
- [id="reset"]:checked ~ input.reset {
-     max-height: 40px;
-     padding: 10px;
-     margin: 10px 0;
-     opacity: 1;
- } */
- 
- 
-/* 
- button {
-     width: 250px;
-  
-    height: 40px;
-     border-radius: 7px;    
-     background-color: #A60000 ;
-     font-size: 0;
-    
- } button:before {font-size: 16px; 
-    }
-
- 
- /* //    show botton text based on radio selection */
- /* [id="sign-in"]:checked ~ button:before { content: 'Sign In'; }
- [id="sign-up"]:checked ~ button:before { content: 'Sign Up'; }
- [id="reset"]:checked ~ button:before { content: 'Reset password'; }
-        
- label {
-     position: relative;
-     display: inline-block;
-     text-align: center;
-     font-weight: 700;
-     cursor: pointer;
-     color: white;
-     transition: 300ms ease;
-     width: calc(100% / 3 - 4px); */
- /* }
-      */
-  
-     /* label:after {
-         content: '';
-         border: 10px, solid, transparent;
-         position: absolute;
-         bottom: -10px;
-         left: calc(50% - 10px);
-         transition: inherit;
-     }
-
-    
-  */ 
   @import 'https://fonts.googleapis.com/css?family=Dosis|Roboto:300,400';
 * {
     margin: 0;
